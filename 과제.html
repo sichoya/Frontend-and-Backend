@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">  
+<head>
+<h1>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./과제.css">
+
+<h3> 메뉴 </h3>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+     <!-- 여기는 메인 헤더가 들어가는 위치입니다. -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#회원가입_위치">회원가입</a></li>
+                <li><a href="#프로필정보_위치">프로필정보</a></li>
+                <li><a href="#문의하기_위치">문의하기</a></li>
+            </ul>
+        </nav>
+        <hr>
+
+
+    </header>
+
+    <section>
+            <h3 id ="회원가입_위치">회원가입</h3>
+
+    <form action="/submit-form" method="POST">
+
+        <!-- 사용자 이름 입력 -->
+        <label for="username">사용자 이름:</label>
+        <input type="text" id="username" name="username" placeholder="사용자 이름 입력" maxlength="20" required>
+        <br><br>
+
+        <!-- 이메일 입력 -->
+        <label for="email">이메일:</label>
+        <input type="email" id="email" name="email" placeholder="example@example.com" required>
+        <br><br>
+
+        <!-- 비밀번호 입력 -->
+        <label for="password">비밀번호:</label>
+        <input type="password" id="password" name="password" placeholder="비밀번호 입력" minlength="8" required>
+        <br><br>
+
+        <!-- 나이 입력 -->
+        <label for="age">나이:</label>
+        <input type="number" id="age" name="age" min="1" max="120" placeholder="나이 입력">
+        <br><br>
+
+        <!-- 성별 선택 -->
+        <label>성별:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">남성</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">여성</label>
+        <br><br>
+
+        <!-- 자기소개 -->
+        <label for="bio">자기소개:</label>
+        <textarea id="bio" name="bio" rows="4" cols="50" placeholder="자기소개를 입력하세요"></textarea>
+        <br><br>
+
+        <!-- 파일 업로드 -->
+        <label for="profilePic">프로필 사진 업로드:</label>
+        <input type="file" id="profilePic" name="profilePic" accept="image/*">
+        <br><br>
+
+        <!-- 양식 제출 -->
+        <button type="submit">회원가입</button>
+        <button type="reset">초기화</button>
+
+
+        <!-- 작업 진행 상황 -->
+        <label for="uploadProgress">업데이트 진행 상황:</label> 
+        <progress id="uploadProgress" value="0" max="100"></progress>
+
+
+
+
+    </form>
+    </section>
+<hr>
+    <section>
+        <h3 id = "프로필정보_위치">프로필 정보</h3>
+        <table>
+        <caption>프로필 정보 요약</caption> 
+
+        <colgroup>
+            <col style = "width: 20%;">
+            <col style = "width: 80%;">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th>항목</th>
+                <th>내용</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>프로필</td>
+                <td><img id="profileimg"></td>
+            </tr>
+            <tr>
+                <td>이름</td>
+                <td id="profilename"></td>
+            </tr>
+            <tr>
+                <td>이메일</td>
+                <td id="profileemail"></td>
+            </tr>
+                <td>나이</td>
+                <td id="profileage"></td>
+            </tr>
+            <tr>
+                <td>성별</td>
+                <td id="profilegender"></td>
+            </tr>
+            <tr>
+                <td>자기소개</td>
+                <td id="profileBio"></td>
+            </tr>
+             <tr>
+                <td>취미</td>
+                <td id="profilehobbies"></td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="2">프로필 정보가 성공적으로 업데이트되었습니다.</td> 
+            </tr>
+        </tfoot>
+    </table>
+    </section>
+<hr>
+        <h3 id = "문의하기_위치">문의하기</h3>
+        <dl>
+            <address>
+            문의: <a href="html@example.com">html@example.com</a><br />
+            </address>
+            <address>
+            전화: <a>010-1234-5678</a><br />
+            </address>
+            <address>
+            주소: <a>서울특별시 중구</a><br />
+            </address>
+
+        </dl>
+    <h3>오시는 길</h3>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.6307460537173!2d126.99497141093235!3d37.5637626241713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca31dfc6a0195%3A0xcbc951d4b6ec331!2z7ISc7Jq47Yq567OE7IucIOykkeq1rOyyrQ!5e0!3m2!1sko!2skr!4v1754375451159!5m2!1sko!2skr" 
+        width="1000"
+        height="300" 
+        allowfullscreen="" 
+        loading="lazy">
+    </iframe>
+
+</body>
+
+</h1>html>
