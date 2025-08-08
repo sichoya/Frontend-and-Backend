@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    height: height: 100vh;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    background-color: paleturquoise;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    letter-spacing: 1px;
+}
+
+.form { 
+    margin-top: 40px;
+    border-radius: 5px;
+    /* overflow: 0; */
+    display: grid;
+    gap: 15px;
+    transform: translate3d(0, 400px, 0);
+}
+
+.sign_box {
+    width: 90%;
+    max-width: 390px;
+    margin: 10vh auto;
+}
+.sign_header {
+    text-align: center;
+    opacity: 0;
+    transform: translate3d(0, 500px, 0);
+    /* animation: ; */
+}
+.sign_title {
+    font-size: 20px;
+    margin-bottom: -10px;
+    font-weight: 50;
+    color: aliceblue;
+    height: 100px;
+}
+
+.form_login_label {
+    color: #573b8a;
+    transform: scale(.6);
+}
+
+
+
+.btn { 
+    display: block;
+    width: 100%;
+    padding: 20px;
+    font-family: inherit;
+    outline: 0;
+    border: 0;
+    color: aliceblue;
+    background: cornflowerblue;
+    transition: 0.3s;
+
+}
+
